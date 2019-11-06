@@ -1,0 +1,24 @@
+
+body{
+    text-align: center;
+}
+div p{
+    color: red;
+    font-size: 25px;
+}
+div > a:link{
+    color: blue;    
+}
+div > a:visited{
+    color: seagreen;
+}
+div > a:hover{
+    color:red;
+}
+div > a:active{
+    font-size: 25px;
+}
+div + p{
+    background-color: yellow;
+    font-size: 25px;
+}
