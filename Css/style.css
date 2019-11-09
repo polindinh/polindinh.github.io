@@ -1,55 +1,119 @@
-.navigation {
-    background-color: rgb(245, 240, 240);
-    overflow: hidden;
-  }
-  
-  .navigation a {
-    text-decoration: none;
-    color:black;
-    float: left;
-    text-align: center;
-    padding: 20px 20px;
-    font-size:24px;
-    font-weight: 900;
-  }
-  
-  .navigation a:hover {
-    background-color:brown;
-    color:whitesmoke;
-  }
-  
-  .navigation a.active {
-    background-color:red;
-    color:black;
-  }
-
-
 body{
-    text-align: center;
+  height:300vh;
 }
-#logo-image{
+#video{
+  position:static;
+  margin-top: 10px;
+  z-index:-3;
+}
+  .navigation {
+    background-color:whitesmoke;
+    overflow: hidden;
+    position: sticky;
+    left: 0;
+    top:0;
+    padding: 20px;
+    margin-top: 10px;
     border-style:solid;
-    border-width:5px;
-    background-color: brown;
-
-}
-
-div p{
-    color:red;
-    font-size: 25px;
-}
-div > a:active{
-    font-size: 40px;
-}
-div + p{
-    background-color: yellow;
-    font-size: 40px;
-    color:black;
-}
-@media only screen and (max-width: 600px) {
-    .navigation a {
-      display: block;
-      float: none;
-      width: 100%;
+    border-width:2px;
     }
+    
+    .navigation a {
+      text-decoration: none;
+      color:brown;
+      text-align: center;
+      font-size:24px;
+      font-weight: bolder;
+      padding: 20px;
+    }
+    
+    .navigation a:hover {
+      background-color:brown;
+      color:whitesmoke;
+    }
+    
+    .navigation a:active {
+      background-color:brown;
+      color:black;
+    }
+  
+  body{
+      text-align: center;
+      height: 200vh;
   }
+  
+  .col{
+    position: relative;
+    width: 24vw;
+    height: 40vw;
+  }
+  
+  #column-one{
+    position: absolute;
+    top:111.5%;
+    left:6.25%;
+    background-color:brown;
+    z-index: -2;
+  
+  
+  }
+  #column-two{
+    position: absolute;
+    top:111.5%;
+    left: 37.5%;
+    background-color:brown;
+    z-index: -2;
+    
+  }
+  #column-three{
+    position: absolute;
+    top:111.5%;
+    left: 68.75%;
+    background-color:brown;
+    z-index: -2;
+
+  }
+  
+  #footer{
+    position:fixed ;
+    bottom:0;
+    width: 98.2%;
+    z-index: 2000;
+    background-color: white;
+    text-align:center;
+    border-style:solid;
+    border-width:2px;
+    
+  }
+  
+  #logo-image{
+      border-style:solid;
+      border-width:2px;
+      background-color:brown;
+  
+  }
+  
+  div p{
+      color:red;
+      font-size: 25px;
+  }
+  div > a:active{
+      font-size: 40px;
+  }
+  div + p{
+      background-color: yellow;
+      font-size: 40px;
+      color:black;
+  }
+  @media only screen and (max-width: 600px) {
+      .navigation a {
+        display: block;
+        width: 100%;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+        .col {
+          height:10%;
+          width: 10%;
+        }
+      }
