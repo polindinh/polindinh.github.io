@@ -50,10 +50,16 @@ a {
   border-right: 1px solid brown;
 }
 .footer p {
-  padding-top: 10px;
-  text-align: left;
+  padding-top: 15px;
+  text-align: center;
   padding-left: 10px;
   color: $primary-color;
+}
+#footer img {
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header {

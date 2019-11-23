@@ -31,6 +31,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  row-gap: 5vh;
 }
 
 .header img {
@@ -53,13 +54,21 @@ a {
   -webkit-box-shadow: 1px 1px 4px 0 #752121;
           box-shadow: 1px 1px 4px 0 #752121;
   border-right: 1px solid brown;
+  display: block;
 }
 
 .footer p {
-  padding-top: 10px;
-  text-align: left;
+  padding-top: 15px;
+  text-align: center;
   padding-left: 10px;
   color: white;
+}
+
+#footer img {
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
@@ -201,6 +210,29 @@ a {
   padding-top: 10px;
 }
 
+.video-content {
+  width: 100%;
+  background-color: #f3eeee;
+  margin: 10px 0;
+  border: 1px solid brown;
+  -webkit-box-shadow: 1px 1px 3px 0 rgba(117, 33, 33, 0.7);
+          box-shadow: 1px 1px 3px 0 rgba(117, 33, 33, 0.7);
+}
+
+.video {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#content p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#content {
+  width: 85vw;
+}
+
 /*Mobile Break Point*/
 @media (min-width: 600px) {
   .header {
@@ -327,6 +359,21 @@ a {
     font-size: 30px;
     padding-top: 12px;
   }
+  .video-content {
+    width: 100%;
+    background-color: #f3eeee;
+    opacity: .5s;
+    margin: 20px 0;
+    border: 1px solid brown;
+    -webkit-box-shadow: 1px 1px 3px 0 rgba(117, 33, 33, 0.7);
+            box-shadow: 1px 1px 3px 0 rgba(117, 33, 33, 0.7);
+  }
+  .video {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 85vw;
+  }
 }
 
 /*Latop/desktop break point*/
@@ -404,6 +451,24 @@ a {
     color: white;
     font-size: 40px;
     padding-top: 15px;
+  }
+  .video-content {
+    width: 100%;
+    background-color: #f3eeee;
+    opacity: .5s;
+    margin: 20px 0;
+    border: 1px solid brown;
+    -webkit-box-shadow: 1px 1px 3px 0 rgba(117, 33, 33, 0.7);
+            box-shadow: 1px 1px 3px 0 rgba(117, 33, 33, 0.7);
+  }
+  .video {
+    display: block;
+    width: 60vw;
+  }
+  #content {
+    width: 60vw;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=about-us-style.css.map */
