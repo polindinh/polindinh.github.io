@@ -1,55 +1,58 @@
 .navigation {
-    background-color: rgb(245, 240, 240);
-    overflow: hidden;
-  }
-  
-  .navigation a {
-    text-decoration: none;
-    color:black;
-    float: left;
-    text-align: center;
-    padding: 20px 20px;
-    font-size:24px;
-    font-weight: 900;
-  }
-  
-  .navigation a:hover {
-    background-color:brown;
-    color:whitesmoke;
-  }
-  
-  .navigation a.active {
-    background-color:red;
-    color:black;
-  }
-
-
-body{
-    text-align: center;
-}
-#logo-image{
-    border-style:solid;
-    border-width:5px;
-    background-color: brown;
-
+  background-color: #f5f0f0;
+  overflow: hidden;
 }
 
-div p{
-    color:red;
-    font-size: 25px;
+.navigation a {
+  text-decoration: none;
+  color: black;
+  float: left;
+  text-align: center;
+  padding: 20px 20px;
+  font-size: 24px;
+  font-weight: 900;
 }
-div > a:active{
-    font-size: 40px;
+
+.navigation a:hover {
+  background-color: brown;
+  color: whitesmoke;
 }
-div + p{
-    background-color: yellow;
-    font-size: 40px;
-    color:black;
+
+.navigation a.active {
+  background-color: red;
+  color: black;
 }
+
+body {
+  text-align: center;
+}
+
+#logo-image {
+  border-style: solid;
+  border-width: 5px;
+  background-color: brown;
+}
+
+div p {
+  color: red;
+  font-size: 25px;
+}
+
+div > a:active {
+  font-size: 40px;
+}
+
+div + p {
+  background-color: yellow;
+  font-size: 40px;
+  color: black;
+}
+
 @media only screen and (max-width: 600px) {
-    .navigation a {
-      display: block;
-      float: none;
-      width: 100%;
-    }
+  .navigation a {
+    display: block;
+    float: none;
+    width: 100%;
   }
+}
+/*# sourceMappingURL=location-contact-style.css.map */

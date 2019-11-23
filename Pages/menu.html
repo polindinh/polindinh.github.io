@@ -1,8 +1,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../Css/menu-style.css" <title>
-    Menu
+    <title>
+        Menu
     </title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,45 +10,36 @@
     <meta name="keyword" content="Pizza, Okotoks, Menu, Food">
     <meta name="description" content="Okotoks Pizza Menu">
     <meta name="author" content="Doug">
+    <link rel="stylesheet" type="text/css" href="../Css/menu-style.css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 </head>
 
 <body>
-    <section id="menu-footer">
-        <div id="logo-image">
-            <img src="../Images/okotoks-pizza-logo.png">
-        </div>
-
-        <div class="navigation">
-            <a href="../index.html">Home</a>
-            <a href="#menu.html">Menu</a>
-            <a href="specials.html">Specials</a>
-            <a href="about-us.html">About Us</a>
-            <a href="location-contact.html">Location and Contact</a>
-            <a href="tel:4035555555">Call Us 403 555 5555</a>
-
-
-        </div>
-
-    </section>
-    <section id="menu-content">
-        <article>
-            <div>
-                <p>
-                    Menu Items
-                </p>
+    <div id="container" class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="../Images/okotoks-pizza-logo.png"></a>
             </div>
-        </article>
-    </section>
-    <section id="menu-footer">
-        <article>
-            <div>
-                <p>
-                    copyrights and social media links
-                </p>
+            <div class="menu">
+                <input type="checkbox" class="menu-button" id="menu-button">
+                <label class="menu-icon" for="menu-button"><span class="ham-icon"></span></label>
+                <ul class="main-menu">
+                    <li id="home"><a href="../index.html">Home</a></li>
+                    <li id="menu"><a href="#Pages/menu.html">Menu</a></li>
+                    <li id="about-us"><a href="../Pages/about-us.html">About Us</a></li>
+                    <li id="phone"><a href="tel:4035555555">Call 403 555 5555</a></li>
+                    <li id=desktop-phone>Call 403 555 5555 </li>
+                </ul>
             </div>
-        </article>
-    </section>
-
+        </div>
+        <div id="content" class="content">
+            div
+        </div>
+        <div id="footer" class="footer">
+            <p>Okotoks Pizza &#169 copyright 2019, Calgary, AB, Canada</p>
+        </div>
+    </div>
+    <a class="up-btn" href="#"><i class="fas fa-arrow-circle-up"></i></a>
 </body>
 
 </html>
