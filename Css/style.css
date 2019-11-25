@@ -45,36 +45,11 @@ a {
   padding: 10px;
 }
 
-#footer {
-  background-color: #2b2828;
-  height: 100px;
-  width: 100%;
-  -webkit-box-shadow: 1px 1px 4px 0 #752121;
-          box-shadow: 1px 1px 4px 0 #752121;
-  border-right: 1px solid brown;
-  display: block;
-}
-
-.footer p {
-  padding-top: 15px;
-  text-align: center;
-  padding-left: 10px;
-  color: whitesmoke;
-}
-
-#footer img {
-  padding: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .header {
-  position: -webkit-sticky;
-  position: sticky;
+  /*position: sticky;
   top: 0;
-  z-index: 100;
-  background-color: whitesmoke;
+  z-index: 100;*/
+  background-color: #b5f1ba;
   -webkit-box-shadow: 1px 1px 4px 0 #752121;
           box-shadow: 1px 1px 4px 0 #752121;
   width: 100%;
@@ -95,6 +70,7 @@ a {
   background-color: whitesmoke;
   -webkit-box-shadow: 1px 1px 4px 0 #752121;
           box-shadow: 1px 1px 4px 0 #752121;
+  border-radius: 50%;
 }
 
 .header ul a {
@@ -284,6 +260,7 @@ a {
   color: white;
   font-size: 25px;
   padding-top: 12px;
+  border-radius: 50%;
 }
 
 .bullet-points img:hover {
@@ -407,6 +384,30 @@ a {
 .write-review h1:hover {
   background-color: brown;
   color: white;
+}
+
+#footer {
+  background-color: #2b2828;
+  height: 100px;
+  width: 100%;
+  -webkit-box-shadow: 1px 1px 4px 0 #752121;
+          box-shadow: 1px 1px 4px 0 #752121;
+  border-right: 1px solid brown;
+  display: block;
+}
+
+.footer p {
+  padding-top: 15px;
+  text-align: center;
+  padding-left: 10px;
+  color: whitesmoke;
+}
+
+#footer img {
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*Mobile Break Point*/
@@ -710,7 +711,7 @@ a {
     margin-right: auto;
     -o-object-fit: contain;
        object-fit: contain;
-    width: 140px;
+    width: 110px;
     float: center;
     display: block;
     margin-left: auto;
