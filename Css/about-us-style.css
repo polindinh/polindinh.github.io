@@ -49,34 +49,23 @@ a {
   /*position: sticky;
   top: 0;
   z-index: 100;*/
-  background-color: #b5f1ba;
+  background-color: #38cf38;
   -webkit-box-shadow: 1px 1px 4px 0 #770b0b;
           box-shadow: 1px 1px 4px 0 #770b0b;
   width: 100%;
-  margin-bottom: 0;
-}
-
-.header .logo {
-  border-right: 2px solid brown;
-  -webkit-box-shadow: 0px 0px 0px 0 #f3eeee;
-          box-shadow: 0px 0px 0px 0 #f3eeee;
 }
 
 .header ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: whitesmoke;
-  -webkit-box-shadow: 1px 1px 4px 0 #752121;
-          box-shadow: 1px 1px 4px 0 #752121;
+  background-color: white;
   border-radius: 50%;
 }
 
 .header ul a {
   display: block;
   padding: 20px;
-  border-right: 2px solid brown;
+  border-right: 1px solid brown;
   text-decoration: none;
   text-align: center;
   outline: 1px solid brown;
@@ -99,7 +88,6 @@ a {
   position: relative;
   float: right;
   cursor: pointer;
-  border-right: 2px solid brown;
 }
 
 .header .menu-icon .ham-icon {
@@ -145,6 +133,7 @@ a {
 
 .header .menu-button:checked ~ .main-menu {
   max-height: 240px;
+  border: 1px solid brown;
 }
 
 .header .menu-button:checked ~ .menu-icon .ham-icon {

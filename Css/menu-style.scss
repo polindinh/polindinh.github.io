@@ -12,7 +12,6 @@ $secondary-text-color: rgb(56, 207, 56);
 html,
 body {
   margin: 0;
-  padding: 5px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background-color: $primary-color;
   height: auto;
@@ -42,52 +41,28 @@ a {
   padding: 10px;
 }
 
-#footer {
-  background-color: rgb(43, 40, 40);
-  height: 100px;
-  width: 100%;
-  box-shadow: 1px 1px 4px 0 rgba(117, 33, 33, 1);
-  border-right: 1px solid brown;
-}
-.footer p {
-  padding-top: 15px;
-  text-align: center;
-  padding-left: 10px;
-  color: $primary-color;
-}
-#footer img {
-    padding: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .header {
   /*position: sticky;
   top: 0;
   z-index: 100;*/
-  background-color:rgb(181, 241, 186);
-  box-shadow: 1px 1px 4px 0 rgba(117, 33, 33, 1);
+  background-color:$secondary-text-color;
   width: 100%;
-  margin-bottom: 0;
+  box-shadow: 1px 1px 4px 0 rgb(119, 11, 11);
 }
-.header .logo {
-  border-right: 2px solid $secondary-color;
-  box-shadow: 0px 0px 0px 0 rgb(243, 238, 238);
-}
+
+
+
 .header ul {
   margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: whitesmoke;
-  box-shadow: 1px 1px 4px 0 rgba(117, 33, 33, 1);
+  background-color:$primary-color;
   border-radius: 50%;
 }
 .header ul a {
   display: block;
   padding: 20px;
-  border-right: 2px solid $secondary-color;
   text-decoration: none;
   text-align: center;
   outline: 1px solid $secondary-color;
@@ -108,7 +83,6 @@ a {
   position: relative;
   float: right;
   cursor: pointer;
-  border-right: 2px solid $secondary-color;
 }
 .header .menu-icon .ham-icon {
   background: $secondary-color;
@@ -147,6 +121,8 @@ a {
 }
 .header .menu-button:checked ~ .main-menu {
   max-height: 240px;
+  border: 1px solid $secondary-color;
+
 }
 .header .menu-button:checked ~ .menu-icon .ham-icon {
   background: transparent;
@@ -180,8 +156,119 @@ a {
   font-size: 28px;
   padding-top: 10px;
   border-radius: 50%;
+  z-index: 200;
+}
+.content{
+  display: block;
+  width: 95vw;
+}
+.menu-item {
+  display:grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  padding:10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color:$primary-color;
+  box-shadow: 1px 1px 4px 0 rgba(117, 33, 33, 1);
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+.menu-item a {
+  text-decoration: none;
+  text-align: center;
+  padding-right:10px;
+  line-height: 2rem;
+
+}
+.menu-item a:hover {
+  color: black;
+}
+.specials, .regular-pizza, .veggie-pizza-item, .pasta-item, .calzones-item {
+  display: grid;
+  grid-template-rows:50px 1fr ;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  
+ 
+}
+.combo, .pizza, .veggie-pizza, .pasta, .calzones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+.content img {
+  width :100%;
+  height:auto;
 }
 
+.header-menu{
+  background-color:$secondary-text-color ;
+  position: sticky;
+  top:60px;
+  z-index: 10;
+  text-align: center;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  color:$primary-color;
+  box-shadow: -5px 1px 15px 0 rgba(160, 131, 131, 0.7);
+}
+/*
+.specials, .veggie-pizza-item, .pasta-item, .calzones-item {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr ;
+  column-gap: 10px;
+  row-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.content img {
+  width: 100%;
+  height: auto;
+}
+
+.regular-pizza {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+*/
+
+
+#footer {
+  background-color: rgb(43, 40, 40);
+  height: 100px;
+  width: 100%;
+  box-shadow: 1px 1px 4px 0 rgba(117, 33, 33, 1);
+  border-right: 1px solid brown;
+}
+.footer p {
+  padding-top: 15px;
+  text-align: center;
+  padding-left: 10px;
+  color: $primary-color;
+}
+#footer img {
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*Mobile Break Point*/
 @media (min-width: 600px) {
   .header {
@@ -335,6 +422,7 @@ a {
     padding: 20px 30px;
     font-size: 1.4rem;
   }
+  
   #desktop-phone {
     display: block;
     padding: 20px;

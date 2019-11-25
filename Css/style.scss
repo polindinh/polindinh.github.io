@@ -46,38 +46,32 @@ a {
   /*position: sticky;
   top: 0;
   z-index: 100;*/
-  background-color: rgb(181, 241, 186);
-  box-shadow: 1px 1px 4px 0 rgba(117, 33, 33, 1);
+  background-color:$secondary-text-color;
   width: 100%;
-  margin-bottom: 0;
+  box-shadow: 1px 1px 4px 0 rgb(119, 11, 11);
 }
-.header .logo {
-  border-right: 2px solid brown;
-  box-shadow: 0px 0px 0px 0 rgb(243, 238, 238);
-}
+
+
+
 .header ul {
   margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: whitesmoke;
-  box-shadow: 1px 1px 4px 0 rgba(117, 33, 33, 1);
+  background-color:$primary-color;
   border-radius: 50%;
-
-
 }
 .header ul a {
   display: block;
   padding: 20px;
-  border-right: 2px solid brown;
   text-decoration: none;
   text-align: center;
-  outline: 1px solid brown;
+  outline: 1px solid $secondary-color;
 }
 
 .header ul a:hover {
-  background-color: brown;
-  color: white;
+  background-color: $secondary-color;
+  color: $primary-color;
 }
 
 .header .main-menu {
@@ -90,8 +84,6 @@ a {
   position: relative;
   float: right;
   cursor: pointer;
-  border-right: 2px solid brown;
-
 }
 .header .menu-icon .ham-icon {
   background: brown;
@@ -130,6 +122,8 @@ a {
 }
 .header .menu-button:checked ~ .main-menu {
   max-height: 240px;
+  border: 1px solid $secondary-color;
+
 }
 .header .menu-button:checked ~ .menu-icon .ham-icon {
   background: transparent;
