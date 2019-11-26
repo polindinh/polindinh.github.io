@@ -266,6 +266,7 @@ a {
   padding-top: 5px;
   -webkit-box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
           box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
+  font-size: 1.5rem;
 }
 
 .bullet-points h1:hover {
@@ -285,7 +286,6 @@ a {
   color: brown;
   text-align: center;
   line-height: 2rem;
-  font-size: 1.1rem;
 }
 
 .store-info h1 {
@@ -296,6 +296,7 @@ a {
   border: 1px solid brown;
   -webkit-box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
           box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
+  font-size: 1.5rem;
 }
 
 .map {
@@ -335,6 +336,7 @@ a {
   color: #197278;
   text-align: center;
   margin: 20px 0;
+  font-size: 1.5rem;
   border: 1px solid brown;
   -webkit-box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
           box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
@@ -357,7 +359,7 @@ a {
 #content {
   width: 90vw;
   line-height: 2.5rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .write-review h1 {
@@ -367,6 +369,7 @@ a {
           margin-block-start: 20px;
   color: #197278;
   padding: 5px 0;
+  font-size: 1.5rem;
   -webkit-box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
           box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
 }
@@ -377,24 +380,21 @@ a {
 }
 
 #footer {
-  background-color: #2b2828;
-  height: 100px;
+  background-color: #197278;
+  height: 110px;
   width: 100%;
-  -webkit-box-shadow: 1px 1px 4px 0 #752121;
-          box-shadow: 1px 1px 4px 0 #752121;
-  border-right: 1px solid brown;
   display: block;
 }
 
 .footer p {
-  padding-top: 15px;
+  padding-top: 5px;
   text-align: center;
   padding-left: 10px;
   color: white;
 }
 
 #footer img {
-  padding: 10px;
+  padding-top: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -888,6 +888,9 @@ a {
     width: 80vw;
     line-height: 2.5rem;
     font-size: 1.2rem;
+  }
+  #footer {
+    height: 96px;
   }
 }
 /*# sourceMappingURL=style.css.map */

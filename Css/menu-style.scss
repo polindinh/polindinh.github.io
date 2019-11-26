@@ -168,7 +168,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #edddd4;
+  background-color:$primary-background-color;
   box-shadow: -5px 1px 15px 0 rgba(160, 131, 131, 0.7);
   width: 100%;
   justify-items: center;
@@ -294,20 +294,20 @@ a {
 }
 
 #footer {
-  background-color: rgb(43, 40, 40);
-  height: 100px;
+  background-color:$secondary-text-color;
+  height: 110px;
   width: 100%;
-  box-shadow: 1px 1px 4px 0 rgba(117, 33, 33, 1);
-  border-right: 1px solid brown;
+  display: block;
+
 }
 .footer p {
-  padding-top: 15px;
+  padding-top: 5px;
   text-align: center;
   padding-left: 10px;
   color: $primary-color;
 }
 #footer img {
-  padding: 10px;
+  padding-top: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -555,5 +555,8 @@ a {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 1fr;
+  }
+  #footer {
+    height: 96px;
   }
 }
