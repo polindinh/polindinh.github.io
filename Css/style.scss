@@ -1,7 +1,7 @@
-$primary-color: whitesmoke;
+$primary-color: white;
 $secondary-color: brown;
 $primary-text-color: black;
-$secondary-text-color:rgb(56, 207, 56);
+$secondary-text-color:#197278;
 
 * {
   padding: 0px;
@@ -12,8 +12,8 @@ $secondary-text-color:rgb(56, 207, 56);
 html,
 body {
   margin: 0;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  background-color: #f5f5f5;
+  font-family: "Open Sans", sans-serif;
+  background-color:$primary-color;
   height: auto;
   scroll-behavior: smooth;
 }
@@ -58,7 +58,7 @@ a {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color:$primary-color;
+  background-color:#edddd4;
   border-radius: 50%;
 }
 .header ul a {
@@ -70,8 +70,8 @@ a {
 }
 
 .header ul a:hover {
-  background-color: $secondary-color;
-  color: $primary-color;
+  background-color: $primary-color;
+  color: $secondary-text-color;
 }
 
 .header .main-menu {
@@ -386,8 +386,8 @@ a {
     color: brown;
   }
   #desktop-phone:hover {
-    background-color: brown;
-    color: white;
+    background-color: $primary-color;
+    color: $secondary-text-color;
   }
 
   #phone {
@@ -510,8 +510,8 @@ a {
     color: brown;
   }
   #desktop-phone:hover {
-    background-color: brown;
-    color: white;
+    background-color: $primary-color;
+    color: $secondary-text-color;
   }
 
   #phone {
@@ -658,8 +658,8 @@ a {
     font-size: 1.4rem;
   }
   #desktop-phone:hover {
-    background-color: brown;
-    color: white;
+    background-color: $primary-color;
+    color: $secondary-text-color;
   }
 
   #phone {
