@@ -20,9 +20,7 @@ body {
   scroll-behavior: smooth;
 }
 
-a {
-  color: $secondary-color;
-}
+
 #container {
   display: grid;
   grid-template-columns: 1fr;
@@ -50,7 +48,7 @@ a {
   z-index: 100;*/
   background-color:$secondary-text-color;
   width: 100%;
-  box-shadow: 1px 1px 4px 0 rgb(119, 11, 11);
+  box-shadow: 1px 1px 4px 0 rgb(167, 153, 153);
 }
 
 
@@ -60,15 +58,15 @@ a {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color:#edddd4;
-  border-radius: 50%;
+  background-color:$secondary-text-color;
 }
 .header ul a {
   display: block;
   padding: 20px;
   text-decoration: none;
   text-align: center;
-  outline: 1px solid $secondary-color;
+  outline: 2px solid $primary-color;
+  color:$primary-color;
 }
 
 .header ul a:hover {
@@ -124,7 +122,6 @@ a {
 }
 .header .menu-button:checked ~ .main-menu {
   max-height: 240px;
-  border: 1px solid $secondary-color;
 
 }
 .header .menu-button:checked ~ .menu-icon .ham-icon {
@@ -144,6 +141,10 @@ a {
 #desktop-phone {
   display: none;
 }
+#content{
+  width:95vw;
+  font-size: 1rem;
+}
 .content #font-page-image {
   width: 100%;
   height: auto;
@@ -156,9 +157,8 @@ a {
   align-self: top;
 }
 .text-image h1 {
-  margin-top: 10px;
   text-align: center;
-  font-size: 40px;
+  font-size: 0.1rem;
   margin-bottom: 10px;
 }
 
@@ -168,13 +168,50 @@ a {
   color: $secondary-text-color;
 }
 .content-text {
+  width: 100%;
+  position: absolute;
+  top: 8px;
+  left: 20px;
+  display: block;
+  text-align: center;
+  
+}
+.content-text h4 {
+  color: $primary-color;
+  padding-top:10px;
+}
+.content-text p{
+  color:greenyellow;
+  padding-bottom:10px;
+  font-size:0.8rem ;
+  
+}
+.content-text a{
+  color:$primary-color;
+  border: 1px solid $primary-color;
+  padding:4px;
+  font-size: 0.8rem;
+  background-color: $secondary-text-color;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.content-text a:hover {
+  background-color: $primary-color;
+  color: $secondary-text-color;
+
+}
+
+
+/*
+.content-text {
   position: absolute;
   top: 8px;
   left: 16px;
+  display: block;
 }
 .content-text h1 {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .content-text {
   position: absolute;
@@ -184,23 +221,26 @@ a {
 
 .content-text p {
   position: absolute;
-  top: 85%;
+  top: 55%;
   right: 1%;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: greenyellow;
+
 }
+
+
 .view-more-btn {
-  padding: 5px;
+  padding: 2px;
   position: absolute;
-  top: 130%;
-  right: 32%;
-  font-size: 1rem;
-  border-radius: 5px;
+  top: 110%;
+  right: 25%;
+  border-radius: 2px;
   background-color: white;
-  box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
+  
 }
 .view-more-btn a {
-  padding: 10px 10px;
+  padding: 5px 5px;
 }
 .view-more-btn:hover {
   background-color: brown;
@@ -209,6 +249,8 @@ a {
 .view-more-btn a:hover {
   color: white;
 }
+*/
+
 .up-btn {
   position: fixed;
   width: 45px;
@@ -230,11 +272,10 @@ a {
 }
 .bullet-points h1 {
   text-align: center;
-  border: 1px solid $secondary-color;
   margin-block-start: 20px;
   color: $secondary-text-color;
   padding-top: 5px;
-  box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
+  box-shadow: 3px 1px 3px 3px rgba(67, 108, 155, 0.7);
   font-size: 1.5rem;
 
 }
@@ -314,11 +355,7 @@ a {
   background-color: brown;
   color: white;
 }
-#content{
-  width:90vw;
-  line-height: 2.5rem;
-  font-size: 1rem;
-}
+
 .write-review h1 {
   text-align: center;
   border: 1px solid $secondary-color;
@@ -377,7 +414,7 @@ a {
     display: none;
   }
   .header .logo {
-    border-right: 4px solid brown;
+    border-right: 3px solid $primary-color;
     box-shadow: 3px 1px 3px 0 rgba(117, 33, 33, 0.7);
   }
 
@@ -441,6 +478,7 @@ a {
     font-size: 30px;
     padding-top: 12px;
   }
+  /*
   .content-text {
     position: absolute;
     top: 8px;
@@ -463,6 +501,7 @@ a {
     font-size: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+  */
   .view-more-btn {
     padding: 5px;
     position: absolute;
@@ -532,7 +571,6 @@ a {
     display: none;
   }
   .header .logo {
-    border-right: 4px solid brown;
     box-shadow: 3px 1px 3px 0 rgba(117, 33, 33, 0.7);
   }
   .content {
@@ -577,6 +615,7 @@ a {
     font-size: 30px;
     padding-top: 12px;
   }
+  /*
   .content-text {
     position: absolute;
     top: 8px;
@@ -599,6 +638,7 @@ a {
     font-size: 1.5rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+  */
   .view-more-btn {
     padding: 5px;
     position: absolute;
@@ -654,11 +694,11 @@ a {
   #desktop-phone {
     display: block;
     padding: 20px;
-    border-right: 2px solid brown;
+    border-right: 3px solid $primary-color;
     text-decoration: none;
     text-align: center;
-    outline: 1px solid brown;
-    color: brown;
+    outline: 2px solid $primary-color;
+    color:$primary-color;
     padding: 20px 30px;
     font-size: 1.4rem;
   }
@@ -679,8 +719,7 @@ a {
     display: none;
   }
   .header .logo {
-    border-right: 4px solid brown;
-    box-shadow: 3px 1px 3px 0 rgba(117, 33, 33, 0.7);
+    box-shadow: 3px 1px 3px 0 rgba(240, 234, 234, 0.7);
   }
   .content {
     display: block;
@@ -715,39 +754,29 @@ a {
     text-align: center;
     color: $secondary-text-color;
   }
-  .content-text {
-    display: block;
-    position: absolute;
-    top: 8px;
-    left: 16px;
-  }
-  .content-text h1 {
-    color: white;
-    font-size: 4rem;
-  }
-  .content-text {
-    position: absolute;
-    top: 10%;
-    left: 6%;
+  .text-image img{
+    width: 50vw;
+    height: 50vh;
   }
 
-  .content-text p {
-    position: absolute;
-    top: 85%;
-    right: 1%;
-    font-size: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  .content-text h4 {
+    padding-top:10vh;
+    font-size: 3rem;
   }
-  .view-more-btn {
-    padding: 5px;
-    position: absolute;
-    top: 130%;
-    right: 32%;
-    font-size: 1.5rem;
+  .content-text p{
+    padding-top:10px;
+    padding-bottom:10px;
+    font-size:2rem ;
+    
+  }
+  .content-text a{
+    padding:5px;
+    font-size: 1rem;
+    margin-top: 10px;
     border-radius: 5px;
-    background-color: white;
-    box-shadow: 3px 1px 3px 0 rgba(238, 231, 231, 0.7);
   }
+
+
   .view-more-btn a {
     padding: 10px 10px;
   }
