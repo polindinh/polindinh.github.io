@@ -1,9 +1,8 @@
 $primary-color: white;
 $secondary-color: brown;
 $primary-text-color: black;
-$secondary-text-color:#197278;
-$primary-background-color:#edddd4;
-
+$secondary-text-color: #197278;
+$primary-background-color: #edddd4;
 
 * {
   padding: 0px;
@@ -13,13 +12,11 @@ $primary-background-color:#edddd4;
 }
 html,
 body {
-  margin: 0;
   font-family: "Open Sans", sans-serif;
-  background-color:$primary-color;
+  background-color: $primary-color;
   height: auto;
   scroll-behavior: smooth;
 }
-
 
 #container {
   display: grid;
@@ -32,41 +29,33 @@ body {
 .header img {
   margin-left: auto;
   margin-right: auto;
-  object-fit: contain;
   width: 100px;
-  float: center;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   padding: 10px;
-}
 
+}
 
 .header {
   /*position: sticky;
   top: 0;
   z-index: 100;*/
-  background-color:$secondary-text-color;
+  background-color: $secondary-text-color;
   width: 100%;
   box-shadow: 1px 1px 4px 0 rgb(167, 153, 153);
 }
 
-
-
 .header ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color:$secondary-text-color;
+  background-color: $secondary-text-color;
 }
 .header ul a {
   display: block;
   padding: 20px;
   text-decoration: none;
   text-align: center;
-  outline: 2px solid $primary-color;
-  color:$primary-color;
+  border-bottom: 2px solid $primary-color;
+  color: $primary-color;
 }
 
 .header ul a:hover {
@@ -80,7 +69,7 @@ body {
   transition: max-height 0.5s ease-in-out;
 }
 .header .menu-icon {
-  padding: 18px 12px;
+  padding: 15px;
   position: relative;
   float: right;
   cursor: pointer;
@@ -121,8 +110,7 @@ body {
   display: none;
 }
 .header .menu-button:checked ~ .main-menu {
-  max-height: 240px;
-
+  max-height: 250px;
 }
 .header .menu-button:checked ~ .menu-icon .ham-icon {
   background: transparent;
@@ -141,8 +129,8 @@ body {
 #desktop-phone {
   display: none;
 }
-#content{
-  width:95vw;
+#content {
+  width: 95vw;
   font-size: 1rem;
 }
 .content #font-page-image {
@@ -168,28 +156,26 @@ body {
   color: $secondary-text-color;
 }
 .content-text {
-  width: 100%;
+  width: 80%;
   position: absolute;
-  top: 8px;
-  left: 20px;
+  top: 10px;
+  left: 25px;
   display: block;
   text-align: center;
-  
 }
 .content-text h4 {
   color: $primary-color;
-  padding-top:10px;
+  padding-top: 10px;
 }
-.content-text p{
-  color:greenyellow;
-  padding-bottom:10px;
-  font-size:0.8rem ;
-  
+.content-text p {
+  color: greenyellow;
+  padding-bottom: 10px;
+  font-size: 0.8rem;
 }
-.content-text a{
-  color:$primary-color;
+.content-text a {
+  color: $primary-color;
   border: 1px solid $primary-color;
-  padding:4px;
+  padding: 4px;
   font-size: 0.8rem;
   background-color: $secondary-text-color;
   margin-top: 10px;
@@ -198,58 +184,7 @@ body {
 .content-text a:hover {
   background-color: $primary-color;
   color: $secondary-text-color;
-
 }
-
-
-/*
-.content-text {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  display: block;
-}
-.content-text h1 {
-  color: white;
-  font-size: 1.2rem;
-}
-.content-text {
-  position: absolute;
-  top: 10%;
-  left: 6%;
-}
-
-.content-text p {
-  position: absolute;
-  top: 55%;
-  right: 1%;
-  font-size: 0.8rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: greenyellow;
-
-}
-
-
-.view-more-btn {
-  padding: 2px;
-  position: absolute;
-  top: 110%;
-  right: 25%;
-  border-radius: 2px;
-  background-color: white;
-  
-}
-.view-more-btn a {
-  padding: 5px 5px;
-}
-.view-more-btn:hover {
-  background-color: brown;
-  color: white;
-}
-.view-more-btn a:hover {
-  color: white;
-}
-*/
 
 .up-btn {
   position: fixed;
@@ -277,7 +212,6 @@ body {
   padding-top: 5px;
   box-shadow: 3px 1px 3px 3px rgba(67, 108, 155, 0.7);
   font-size: 1.5rem;
-
 }
 .bullet-points h1:hover {
   background-color: brown;
@@ -329,9 +263,8 @@ body {
   line-height: 25px;
   text-align: justify;
   font-size: 1rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-style: italic;
-
 }
 
 .testimony h1 {
@@ -370,11 +303,10 @@ body {
   color: white;
 }
 #footer {
-  background-color:$secondary-text-color;
+  background-color: $secondary-text-color;
   height: 110px;
   width: 100%;
   display: block;
-
 }
 .footer p {
   padding-top: 5px;
@@ -396,6 +328,11 @@ body {
     justify-items: center;
     align-items: center;
   }
+
+  .header ul a {
+    border-bottom: none;
+    border-right: 2px solid $primary-color;
+  }
   .header li {
     float: left;
   }
@@ -415,26 +352,8 @@ body {
   }
   .header .logo {
     border-right: 3px solid $primary-color;
-    box-shadow: 3px 1px 3px 0 rgba(117, 33, 33, 0.7);
   }
 
-  #desktop-phone {
-    display: block;
-    padding: 20px;
-    border-right: 2px solid brown;
-    text-decoration: none;
-    text-align: center;
-    outline: 1px solid brown;
-    color: brown;
-  }
-  #desktop-phone:hover {
-    background-color: $primary-color;
-    color: $secondary-text-color;
-  }
-
-  #phone {
-    display: none;
-  }
   .content {
     display: block;
   }
@@ -478,30 +397,7 @@ body {
     font-size: 30px;
     padding-top: 12px;
   }
-  /*
-  .content-text {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-  }
-  .content-text h1 {
-    color: white;
-    font-size: 2rem;
-  }
-  .content-text {
-    position: absolute;
-    top: 10%;
-    left: 6%;
-  }
-
-  .content-text p {
-    position: absolute;
-    top: 85%;
-    right: 1%;
-    font-size: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  */
+ 
   .view-more-btn {
     padding: 5px;
     position: absolute;
@@ -522,10 +418,7 @@ body {
   .view-more-btn a:hover {
     color: white;
   }
-  iframe {
-    width: 75%;
-    height: 50vh;
-  }
+ 
 }
 /*Tablet break point*/
 @media (min-width: 768px) {
@@ -534,6 +427,11 @@ body {
     grid-template-columns: 1fr 2fr;
     justify-items: center;
     align-items: center;
+  }
+
+  .header ul a {
+    border-bottom: none;
+    border-right: 2px solid $primary-color;
   }
   .header li {
     float: left;
@@ -544,24 +442,6 @@ body {
     font-size: 1rem;
   }
 
-  #desktop-phone {
-    display: block;
-    padding: 20px;
-    border-right: 2px solid brown;
-    text-decoration: none;
-    text-align: center;
-    outline: 1px solid brown;
-    color: brown;
-  }
-  #desktop-phone:hover {
-    background-color: $primary-color;
-    color: $secondary-text-color;
-  }
-
-  #phone {
-    display: none;
-  }
-
   .header .main-menu {
     clear: none;
     float: right;
@@ -570,11 +450,21 @@ body {
   .header .menu-icon {
     display: none;
   }
-  .header .logo {
-    box-shadow: 3px 1px 3px 0 rgba(117, 33, 33, 0.7);
-  }
+  
   .content {
     display: block;
+  }
+  .content-text {
+    width: 70%;
+    top: 40px;
+    left: 200px;
+  }
+  .content-text h4 {
+    font-size: 2rem;
+  }
+  .content-text p {
+    padding-bottom: 10px;
+    font-size: 1.8rem;
   }
   .bullet-points {
     display: grid;
@@ -615,54 +505,8 @@ body {
     font-size: 30px;
     padding-top: 12px;
   }
-  /*
-  .content-text {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-  }
-  .content-text h1 {
-    color: white;
-    font-size: 3rem;
-  }
-  .content-text {
-    position: absolute;
-    top: 10%;
-    left: 6%;
-  }
-
-  .content-text p {
-    position: absolute;
-    top: 85%;
-    right: 1%;
-    font-size: 1.5rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-  */
-  .view-more-btn {
-    padding: 5px;
-    position: absolute;
-    top: 130%;
-    right: 32%;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 3px 1px 3px 0 rgba(238, 231, 231, 0.7);
-  }
-  .view-more-btn a {
-    padding: 10px 10px;
-  }
-  .view-more-btn:hover {
-    background-color: brown;
-    color: white;
-  }
-  .view-more-btn a:hover {
-    color: white;
-  }
-  iframe {
-    width: 75%;
-    height: 50vh;
-  }
+ 
+  
 }
 /*Latop/desktop break point*/
 @media (min-width: 992px) {
@@ -673,14 +517,7 @@ body {
     align-items: center;
   }
   .header img {
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: contain;
-    width: 110px;
-    float: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 110px; 
     padding: 10px;
   }
   .header li {
@@ -691,39 +528,29 @@ body {
     padding: 20px 30px;
     font-size: 1.4rem;
   }
-  #desktop-phone {
-    display: block;
-    padding: 20px;
-    border-right: 3px solid $primary-color;
-    text-decoration: none;
-    text-align: center;
-    outline: 2px solid $primary-color;
-    color:$primary-color;
-    padding: 20px 30px;
-    font-size: 1.4rem;
-  }
-  #desktop-phone:hover {
-    background-color: $primary-color;
-    color: $secondary-text-color;
-  }
 
-  #phone {
-    display: none;
-  }
-  .header .main-menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
+ 
   .header .menu-icon {
     display: none;
   }
-  .header .logo {
-    box-shadow: 3px 1px 3px 0 rgba(240, 234, 234, 0.7);
-  }
+  
   .content {
     display: block;
   }
+  .content-text {
+    width: 70%;
+    top: 40px;
+    left: 230px;
+  }
+  .content-text h4 {
+    font-size: 2.5rem;
+  }
+  .content-text p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.8rem;
+  }
+
   .bullet-points {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -749,33 +576,6 @@ body {
     padding: 10px 0;
     font-size: 1.1rem;
   }
-  .text-image {
-    position: relative;
-    text-align: center;
-    color: $secondary-text-color;
-  }
-  .text-image img{
-    width: 50vw;
-    height: 50vh;
-  }
-
-  .content-text h4 {
-    padding-top:10vh;
-    font-size: 3rem;
-  }
-  .content-text p{
-    padding-top:10px;
-    padding-bottom:10px;
-    font-size:2rem ;
-    
-  }
-  .content-text a{
-    padding:5px;
-    font-size: 1rem;
-    margin-top: 10px;
-    border-radius: 5px;
-  }
-
 
   .view-more-btn a {
     padding: 10px 10px;
@@ -801,10 +601,7 @@ body {
     font-size: 40px;
     padding-top: 15px;
   }
-  iframe {
-    width: 75%;
-    height: 50vh;
-  }
+  
 
   .customer-review {
     display: grid;
@@ -840,12 +637,34 @@ body {
     border: 1px solid $secondary-color;
     box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
   }
-  #content{
-    width:80vw;
+  #content {
+    width: 80vw;
     line-height: 2.5rem;
     font-size: 1.2rem;
   }
   #footer {
     height: 96px;
+  }
+}
+
+@media (min-width: 1025px) {
+  #desktop-phone {
+    display: block;
+    padding: 20px;
+    border-right: 3px solid $primary-color;
+    text-decoration: none;
+    text-align: center;
+    outline: 2px solid $primary-color;
+    color: $primary-color;
+    padding: 20px 30px;
+    font-size: 1.4rem;
+  }
+  #desktop-phone:hover {
+    background-color: $primary-color;
+    color: $secondary-text-color;
+  }
+
+  #phone {
+    display: none;
   }
 }
