@@ -201,20 +201,21 @@ body {
   padding-top: 11px;
   border-radius: 50%;
 }
+.bullet-points img{
+  border-radius: 40px;
 
+}
 .bullet-points img:hover {
-  opacity: 0.2;
+  opacity: 0.1;
 }
 .bullet-points h1 {
   text-align: center;
   margin-block-start: 20px;
   color: $secondary-text-color;
   padding-top: 5px;
-  box-shadow: 3px 1px 3px 3px rgba(67, 108, 155, 0.7);
-  font-size: 1.5rem;
 }
 .bullet-points h1:hover {
-  background-color: brown;
+  background-color:$secondary-text-color;
   color: white;
 }
 
@@ -228,7 +229,6 @@ body {
   padding: 10px 0;
   color: $secondary-color;
   text-align: center;
-  line-height: 2rem;
 }
 
 .store-info h1 {
@@ -236,9 +236,6 @@ body {
   padding: 10px 0;
   color: $secondary-text-color;
   text-align: center;
-  border: 1px solid $secondary-color;
-  box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
-  font-size: 1.5rem;
 }
 .map {
   padding: 10px 0;
@@ -266,42 +263,17 @@ body {
   font-family: "Open Sans", sans-serif;
   font-style: italic;
 }
-
-.testimony h1 {
-  color: $secondary-text-color;
-  text-align: center;
-  margin: 20px 0;
-  font-size: 1.5rem;
-  border: 1px solid $secondary-color;
-  box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
+.reviewer-name {
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
-
-.customer-review a {
-  text-align: center;
-  color: $secondary-text-color;
-  border: 1px solid $secondary-color;
-  padding: 10px;
-  box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
-}
-
-.customer-review a:hover {
-  background-color: brown;
-  color: white;
-}
-
 .write-review h1 {
-  text-align: center;
-  border: 1px solid $secondary-color;
+ text-align: center;
   margin-block-start: 20px;
   color: $secondary-text-color;
   padding: 5px 0;
-  font-size: 1.5rem;
-  box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
 }
-.write-review h1:hover {
-  background-color: brown;
-  color: white;
-}
+
 #footer {
   background-color: $secondary-text-color;
   height: 110px;
@@ -398,27 +370,7 @@ body {
     padding-top: 12px;
   }
  
-  .view-more-btn {
-    padding: 5px;
-    position: absolute;
-    top: 130%;
-    right: 32%;
-    font-size: 1rem;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 3px 1px 3px 0 rgba(238, 231, 231, 0.7);
-  }
-  .view-more-btn a {
-    padding: 10px 10px;
-  }
-  .view-more-btn:hover {
-    background-color: brown;
-    color: white;
-  }
-  .view-more-btn a:hover {
-    color: white;
-  }
- 
+  
 }
 /*Tablet break point*/
 @media (min-width: 768px) {
@@ -565,7 +517,7 @@ body {
     padding: 10px 0;
   }
   .bullet-points h1:hover {
-    background-color: brown;
+    background-color:$secondary-text-color;
     color: white;
   }
   .bullet-points a {
@@ -577,16 +529,7 @@ body {
     font-size: 1.1rem;
   }
 
-  .view-more-btn a {
-    padding: 10px 10px;
-  }
-  .view-more-btn:hover {
-    background-color: brown;
-    color: white;
-  }
-  .view-more-btn a:hover {
-    color: white;
-  }
+ 
   .up-btn {
     position: fixed;
     width: 70px;
@@ -627,20 +570,13 @@ body {
     color: $secondary-text-color;
     text-align: center;
     margin: 20px 0;
-    border: 1px solid $secondary-color;
-    box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
   }
   .write-review h1 {
     color: $secondary-text-color;
     text-align: center;
-    margin: 20px 0;
-    border: 1px solid $secondary-color;
-    box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
   }
   #content {
     width: 80vw;
-    line-height: 2.5rem;
-    font-size: 1.2rem;
   }
   #footer {
     height: 96px;

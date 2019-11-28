@@ -229,8 +229,12 @@ body {
   border-radius: 50%;
 }
 
+.bullet-points img {
+  border-radius: 40px;
+}
+
 .bullet-points img:hover {
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 .bullet-points h1 {
@@ -239,13 +243,10 @@ body {
           margin-block-start: 20px;
   color: #197278;
   padding-top: 5px;
-  -webkit-box-shadow: 3px 1px 3px 3px rgba(67, 108, 155, 0.7);
-          box-shadow: 3px 1px 3px 3px rgba(67, 108, 155, 0.7);
-  font-size: 1.5rem;
 }
 
 .bullet-points h1:hover {
-  background-color: brown;
+  background-color: #197278;
   color: white;
 }
 
@@ -260,7 +261,6 @@ body {
   padding: 10px 0;
   color: brown;
   text-align: center;
-  line-height: 2rem;
 }
 
 .store-info h1 {
@@ -268,10 +268,6 @@ body {
   padding: 10px 0;
   color: #197278;
   text-align: center;
-  border: 1px solid brown;
-  -webkit-box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
-          box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
-  font-size: 1.5rem;
 }
 
 .map {
@@ -307,45 +303,17 @@ body {
   font-style: italic;
 }
 
-.testimony h1 {
-  color: #197278;
-  text-align: center;
-  margin: 20px 0;
-  font-size: 1.5rem;
-  border: 1px solid brown;
-  -webkit-box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
-          box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
-}
-
-.customer-review a {
-  text-align: center;
-  color: #197278;
-  border: 1px solid brown;
-  padding: 10px;
-  -webkit-box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
-          box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
-}
-
-.customer-review a:hover {
-  background-color: brown;
-  color: white;
+.reviewer-name {
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .write-review h1 {
   text-align: center;
-  border: 1px solid brown;
   -webkit-margin-before: 20px;
           margin-block-start: 20px;
   color: #197278;
   padding: 5px 0;
-  font-size: 1.5rem;
-  -webkit-box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
-          box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
-}
-
-.write-review h1:hover {
-  background-color: brown;
-  color: white;
 }
 
 #footer {
@@ -448,27 +416,6 @@ body {
     color: white;
     font-size: 30px;
     padding-top: 12px;
-  }
-  .view-more-btn {
-    padding: 5px;
-    position: absolute;
-    top: 130%;
-    right: 32%;
-    font-size: 1rem;
-    border-radius: 5px;
-    background-color: white;
-    -webkit-box-shadow: 3px 1px 3px 0 rgba(238, 231, 231, 0.7);
-            box-shadow: 3px 1px 3px 0 rgba(238, 231, 231, 0.7);
-  }
-  .view-more-btn a {
-    padding: 10px 10px;
-  }
-  .view-more-btn:hover {
-    background-color: brown;
-    color: white;
-  }
-  .view-more-btn a:hover {
-    color: white;
   }
 }
 
@@ -622,7 +569,7 @@ body {
     padding: 10px 0;
   }
   .bullet-points h1:hover {
-    background-color: brown;
+    background-color: #197278;
     color: white;
   }
   .bullet-points a {
@@ -633,16 +580,6 @@ body {
             margin-block-start: none;
     padding: 10px 0;
     font-size: 1.1rem;
-  }
-  .view-more-btn a {
-    padding: 10px 10px;
-  }
-  .view-more-btn:hover {
-    background-color: brown;
-    color: white;
-  }
-  .view-more-btn a:hover {
-    color: white;
   }
   .up-btn {
     position: fixed;
@@ -686,22 +623,13 @@ body {
     color: #197278;
     text-align: center;
     margin: 20px 0;
-    border: 1px solid brown;
-    -webkit-box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
-            box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
   }
   .write-review h1 {
     color: #197278;
     text-align: center;
-    margin: 20px 0;
-    border: 1px solid brown;
-    -webkit-box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
-            box-shadow: 3px 1px 3px 0 rgba(177, 9, 9, 0.7);
   }
   #content {
     width: 80vw;
-    line-height: 2.5rem;
-    font-size: 1.2rem;
   }
   #footer {
     height: 96px;
