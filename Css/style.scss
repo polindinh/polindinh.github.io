@@ -16,6 +16,7 @@ body {
   background-color: $primary-color;
   height: auto;
   scroll-behavior: smooth;
+ 
 }
 
 #container {
@@ -36,9 +37,9 @@ body {
 }
 
 .header {
-  /*position: sticky;
-  top: 0;
-  z-index: 100;*/
+  position: sticky;
+  top: -12%;
+  z-index: 100;
   background-color: $secondary-text-color;
   width: 100%;
   box-shadow: 1px 1px 4px 0 rgb(167, 153, 153);
@@ -130,7 +131,7 @@ body {
   display: none;
 }
 #content {
-  width: 95vw;
+  width: 100%;
   font-size: 1rem;
 }
 .content #font-page-image {
@@ -141,7 +142,6 @@ body {
 .content img {
   width: 100%;
   height: auto;
-  padding-top: 10px;
   align-self: top;
 }
 .text-image h1 {
@@ -174,16 +174,20 @@ body {
 }
 .content-text a {
   color: $primary-color;
-  border: 1px solid $primary-color;
-  padding: 4px;
-  font-size: 0.8rem;
-  background-color: $secondary-text-color;
+  padding: 10px;
+  font-size: 1.1rem;
+  background-color: red;
   margin-top: 10px;
   border-radius: 5px;
 }
 .content-text a:hover {
   background-color: $primary-color;
-  color: $secondary-text-color;
+  color: red;
+}
+
+
+.write-review{
+  width: 100%;
 }
 
 .up-btn {
@@ -201,8 +205,10 @@ body {
   padding-top: 11px;
   border-radius: 50%;
 }
+
 .bullet-points img{
   border-radius: 40px;
+  padding: 0 10px;
 
 }
 .bullet-points img:hover {
@@ -212,17 +218,24 @@ body {
   text-align: center;
   margin-block-start: 20px;
   color: $secondary-text-color;
-  padding-top: 5px;
+  border-bottom: 1px solid black;
+}
+.bullet-points a:link {
+  color: $secondary-color;
 }
 .bullet-points h1:hover {
   background-color:$secondary-text-color;
   color: white;
+  border-bottom: 1px solid rgb(104, 18, 18);
 }
 
 .bullet-points p {
   margin-block-start: none;
   padding: 5px;
   font-size: 1.1rem;
+}
+.bullet-points a:visited{
+  color:$secondary-color;
 }
 
 .our-location {
@@ -232,10 +245,9 @@ body {
 }
 
 .store-info h1 {
-  margin-top: 5vh;
-  padding: 10px 0;
   color: $secondary-text-color;
   text-align: center;
+  padding-top: 15px;
 }
 .map {
   padding: 10px 0;
@@ -262,18 +274,24 @@ body {
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
   font-style: italic;
+  padding: 0 10px;
 }
 .reviewer-name {
   padding-bottom: 15px;
   padding-top: 15px;
 }
+
 .write-review h1 {
  text-align: center;
-  margin-block-start: 20px;
   color: $secondary-text-color;
-  padding: 5px 0;
-}
+  width: 100vw;
+  margin: 0 auto;
 
+}
+.write-review h1:hover{
+  background-color: $secondary-text-color;
+  color:$primary-color;
+}
 #footer {
   background-color: $secondary-text-color;
   height: 110px;
@@ -322,9 +340,7 @@ body {
   .header .menu-icon {
     display: none;
   }
-  .header .logo {
-    border-right: 3px solid $primary-color;
-  }
+  
 
   .content {
     display: block;
@@ -339,14 +355,7 @@ body {
   .bullet-points img:hover {
     opacity: 0.2;
   }
-  .bullet-points h1 {
-    text-align: center;
-    padding: 10px 0;
-  }
-  .bullet-points h1:hover {
-    background-color: brown;
-    color: white;
-  }
+ 
   .bullet-points a {
     text-decoration: none;
   }
@@ -369,8 +378,6 @@ body {
     font-size: 30px;
     padding-top: 12px;
   }
- 
-  
 }
 /*Tablet break point*/
 @media (min-width: 768px) {
@@ -427,14 +434,7 @@ body {
   .bullet-points img:hover {
     opacity: 0.2;
   }
-  .bullet-points h1 {
-    text-align: center;
-    padding: 10px 0;
-  }
-  .bullet-points h1:hover {
-    background-color: brown;
-    color: white;
-  }
+  
   .bullet-points a {
     text-decoration: none;
   }
@@ -512,14 +512,7 @@ body {
   .bullet-points img:hover {
     opacity: 0.2;
   }
-  .bullet-points h1 {
-    text-align: center;
-    padding: 10px 0;
-  }
-  .bullet-points h1:hover {
-    background-color:$secondary-text-color;
-    color: white;
-  }
+  
   .bullet-points a {
     text-decoration: none;
   }
@@ -571,10 +564,7 @@ body {
     text-align: center;
     margin: 20px 0;
   }
-  .write-review h1 {
-    color: $secondary-text-color;
-    text-align: center;
-  }
+ 
   #content {
     width: 80vw;
   }
@@ -587,7 +577,7 @@ body {
   #desktop-phone {
     display: block;
     padding: 20px;
-    border-right: 3px solid $primary-color;
+    border-right: 2px solid $primary-color;
     text-decoration: none;
     text-align: center;
     outline: 2px solid $primary-color;

@@ -406,9 +406,6 @@ a {
   .header .menu-icon {
     display: none;
   }
-  .header .logo {
-    border-right: 2px solid white;
-  }
   .up-btn {
     position: fixed;
     width: 55px;

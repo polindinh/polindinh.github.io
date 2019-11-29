@@ -223,6 +223,27 @@ a {
   margin-right: 20px;
 }
 
+.res-info h2 {
+  color: #197278;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.res-info p {
+  color: black;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.map {
+  padding: 10px 0;
+}
+
+iframe {
+  height: 50vh;
+  margin-bottom: 1rem;
+}
+
 #footer {
   background-color: #197278;
   height: 110px;
@@ -274,9 +295,6 @@ a {
   }
   .header .menu-icon {
     display: none;
-  }
-  .header .logo {
-    border-right: 3px solid white;
   }
   .up-btn {
     position: fixed;
@@ -473,7 +491,7 @@ a {
   #desktop-phone {
     display: block;
     padding: 20px;
-    border-right: 3px solid white;
+    border-right: 2px solid white;
     text-decoration: none;
     text-align: center;
     outline: 2px solid white;

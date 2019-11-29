@@ -194,6 +194,24 @@ a {
   float:left;
   margin-right: 20px;
 }
+.res-info h2 {
+  color: $secondary-text-color;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.res-info p{
+  color: $primary-text-color;
+  text-align: center;
+  padding-top: 15px;
+}
+.map {
+  padding: 10px 0;
+}
+iframe {
+  height: 50vh;
+  margin-bottom: 1rem;
+}
 
 #footer {
   background-color: $secondary-text-color;
@@ -244,10 +262,7 @@ a {
   .header .menu-icon {
     display: none;
   }
-  .header .logo {
-    border-right: 3px solid $primary-color;
-  }
-
+  
   .up-btn {
     position: fixed;
     width: 55px;
@@ -443,7 +458,7 @@ a {
   #desktop-phone {
     display: block;
     padding: 20px;
-    border-right: 3px solid $primary-color;
+    border-right: 2px solid $primary-color;
     text-decoration: none;
     text-align: center;
     outline: 2px solid $primary-color;
