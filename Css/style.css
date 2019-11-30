@@ -36,14 +36,12 @@ body {
 }
 
 .header {
-  position: -webkit-sticky;
-  position: sticky;
+  /*position: sticky;
   top: -12%;
-  z-index: 100;
+  z-index: 100;*/
   background-color: #197278;
   width: 100%;
-  -webkit-box-shadow: 1px 1px 4px 0 #a79999;
-          box-shadow: 1px 1px 4px 0 #a79999;
+  min-height: 10vh;
 }
 
 .header ul {
@@ -181,7 +179,7 @@ body {
 .content-text {
   width: 80%;
   position: absolute;
-  top: 10px;
+  top: 5px;
   left: 25px;
   display: block;
   text-align: center;
@@ -190,18 +188,20 @@ body {
 .content-text h4 {
   color: white;
   padding-top: 10px;
+  font-size: 1.3rem;
 }
 
 .content-text p {
   color: greenyellow;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .content-text a {
   color: white;
-  padding: 10px;
-  font-size: 1.1rem;
+  padding: 6px;
+  font-size: 1rem;
   background-color: red;
   margin-top: 10px;
   border-radius: 5px;
@@ -214,6 +214,7 @@ body {
 
 .write-review {
   width: 100%;
+  padding-top: 10px;
 }
 
 .up-btn {
@@ -262,7 +263,7 @@ body {
 .bullet-points p {
   -webkit-margin-before: none;
           margin-block-start: none;
-  padding: 5px;
+  padding: 10px;
   font-size: 1.1rem;
 }
 
@@ -283,7 +284,7 @@ body {
 }
 
 .map {
-  padding: 10px 0;
+  padding: 10px 10px;
 }
 
 .customer-review {
@@ -406,20 +407,14 @@ body {
   .bullet-points p {
     -webkit-margin-before: none;
             margin-block-start: none;
-    padding: 10px 0;
     font-size: 1.1rem;
   }
   .up-btn {
-    position: fixed;
     width: 55px;
     height: 55px;
-    background: #197278;
     bottom: 30px;
     right: 30px;
-    text-decoration: none;
-    text-align: center;
     line-height: 70px;
-    color: white;
     font-size: 30px;
     padding-top: 12px;
   }
@@ -489,22 +484,28 @@ body {
   .bullet-points p {
     -webkit-margin-before: none;
             margin-block-start: none;
-    padding: 10px 0;
+    padding: 10px 20px;
     font-size: 1.1rem;
   }
   .up-btn {
-    position: fixed;
     width: 55px;
     height: 55px;
-    background: #197278;
     bottom: 30px;
     right: 30px;
-    text-decoration: none;
-    text-align: center;
     line-height: 70px;
-    color: white;
     font-size: 30px;
     padding-top: 12px;
+  }
+  .content-text a {
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+  .map {
+    padding: 0 10px;
+    height: 40vh;
+  }
+  .map iframe {
+    height: 40vh;
   }
 }
 
@@ -572,16 +573,11 @@ body {
     font-size: 1.1rem;
   }
   .up-btn {
-    position: fixed;
     width: 70px;
     height: 70px;
-    background: #197278;
     bottom: 25px;
     right: 30px;
-    text-decoration: none;
-    text-align: center;
     line-height: 70px;
-    color: white;
     font-size: 40px;
     padding-top: 15px;
   }
@@ -590,12 +586,18 @@ body {
     display: grid;
     -ms-grid-columns: (minmax(450px, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     -webkit-column-gap: 20px;
             column-gap: 20px;
     justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .write-review {
+    width: 100%;
+    margin: auto;
   }
   .image-cirle img {
     width: 100px;
@@ -609,10 +611,8 @@ body {
     line-height: 25px;
     text-align: justify;
   }
-  .testimony h1 {
-    color: #197278;
-    text-align: center;
-    margin: 20px 0;
+  .write-review h1 {
+    width: 35%;
   }
   #content {
     width: 80vw;
@@ -629,7 +629,6 @@ body {
     border-right: 2px solid white;
     text-decoration: none;
     text-align: center;
-    outline: 2px solid white;
     color: white;
     padding: 20px 30px;
     font-size: 1.4rem;

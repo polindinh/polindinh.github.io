@@ -43,7 +43,7 @@ a {
   z-index: 100;*/
   background-color: $secondary-text-color;
   width: 100%;
-  box-shadow: 1px 1px 4px 0 rgb(167, 153, 153);
+  min-height: 10vh;
 }
 
 .header ul {
@@ -149,8 +149,6 @@ a {
 }
 .video-content {
   width: 100%;
-  margin: 10px 0;
-  box-shadow: 1px 1px 3px 0 rgba(117, 33, 33, 0.7);
 }
 .video {
   margin-left: auto;
@@ -159,21 +157,27 @@ a {
 }
 
 #content {
-  width: 90vw;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 0.25fr);
 }
 #content p {
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 #content h1 {
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-align: center;
   color: $secondary-text-color;
 }
 
-.store-image {
-  width: 100%;
+.store-image,
+.res-info,
+.content-text {
+  width: 95%;
   height: auto;
+  margin: auto;
 }
 .store-image img {
   width: 50%;
@@ -191,7 +195,7 @@ a {
   box-shadow: -5px 1px 15px 0 rgba(160, 131, 131, 0.7);
 }
 .store-image #ingredients-image {
-  float:left;
+  float: left;
   margin-right: 20px;
 }
 .res-info h2 {
@@ -200,17 +204,17 @@ a {
   padding-top: 15px;
 }
 
-.res-info p{
+.res-info p {
   color: $primary-text-color;
   text-align: center;
   padding-top: 15px;
 }
 .map {
   padding: 10px 0;
+  height: 40vh;
 }
-iframe {
-  height: 50vh;
-  margin-bottom: 1rem;
+.map iframe {
+  height: 40vh;
 }
 
 #footer {
@@ -262,26 +266,16 @@ iframe {
   .header .menu-icon {
     display: none;
   }
-  
+
   .up-btn {
-    position: fixed;
     width: 55px;
     height: 55px;
-    background: $secondary-text-color;
     bottom: 30px;
     right: 30px;
-    text-decoration: none;
-    text-align: center;
     line-height: 70px;
-    color: $primary-color;
     font-size: 30px;
     padding-top: 12px;
   }
-
-  #content {
-    width: 85vw;
-  }
-  
 }
 /*Tablet break point*/
 @media (min-width: 768px) {
@@ -312,36 +306,28 @@ iframe {
   .header .menu-icon {
     display: none;
   }
-  
+  .store-image,
+  .res-info,
+  .content-text {
+    width: 85vw;
+  }
+  .video {
+    height: 40vh;
+    object-fit: cover;
+  }
 
   .up-btn {
-    position: fixed;
     width: 55px;
     height: 55px;
-    background: $secondary-text-color;
     bottom: 30px;
     right: 30px;
-    text-decoration: none;
-    text-align: center;
     line-height: 70px;
-    color: $primary-color;
     font-size: 30px;
     padding-top: 12px;
   }
-  .video-content {
-    width: 100%;
-    opacity: 0.5s;
-    margin: 20px 0;
-    box-shadow: 1px 1px 3px 0 rgba(117, 33, 33, 0.7);
-  }
   .video {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 85vw;
-  }
-  #content {
-    width: 85vw;
+    height: 20vh;
+    object-fit: cover;
   }
 }
 /*Latop/desktop break point*/
@@ -353,8 +339,6 @@ iframe {
     align-items: center;
   }
   .header img {
-    margin-left: auto;
-    margin-right: auto;
     object-fit: contain;
     width: 110px;
     float: center;
@@ -380,57 +364,26 @@ iframe {
   .header .menu-icon {
     display: none;
   }
- 
 
   .up-btn {
     position: fixed;
     width: 70px;
     height: 70px;
-    background: $secondary-text-color;
     bottom: 25px;
     right: 30px;
-    text-decoration: none;
-    text-align: center;
     line-height: 70px;
-    color: $primary-color;
     font-size: 40px;
     padding-top: 15px;
   }
-  .content-text{
+  .content-text {
     margin: 0 auto;
   }
-  .video-content {
-    width: 100%;
-    margin: 10px 0;
-    background-color: #B62A37;
-    box-shadow: 1px 1px 3px 0 rgba(117, 33, 33, 0.7);
-    border-top-right-radius: 200px;
-    border-top-left-radius: 200px;
-  
 
-  }
   .video {
-    display: block;
-    height: 43vh;
+    height: 20vh;
     object-fit: cover;
-
-
   }
-  #content {
-    width: 85vw;
-  }
-  #content p {
-    width: 70vw;
-    font-size: 1.2rem;
-    margin: 0 auto;
 
-  }
-  
-  .store-image {
-    width: 70vw;
-    margin: 0 auto;
-
-  }
   .store-image img {
     width: 35%;
     height: auto;
@@ -446,9 +399,14 @@ iframe {
     box-shadow: -5px 1px 15px 0 rgba(160, 131, 131, 0.7);
   }
   .store-image #ingredients-image {
-    float:left;
+    float: left;
     width: 36%;
     margin-right: 25px;
+  }
+  .store-image,
+  .res-info,
+  .content-text {
+    width: 85vw;
   }
   #footer {
     height: 95px;
@@ -461,7 +419,6 @@ iframe {
     border-right: 2px solid $primary-color;
     text-decoration: none;
     text-align: center;
-    outline: 2px solid $primary-color;
     color: $primary-color;
     padding: 20px 30px;
     font-size: 1.4rem;
@@ -473,5 +430,9 @@ iframe {
 
   #phone {
     display: none;
+  }
+  .video {
+    height: 40vh;
+    object-fit: cover;
   }
 }
